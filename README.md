@@ -13,11 +13,11 @@
                 - cryptocurrencies
                     - kraken
                     - bittrex
-                    - coinbase
+                    - coinbase pro
             - signal generation
                 - sentiment calculus- (ibm-tone analyzer, nltk-intensity analyzer), event 
                 - momentum cross sectional- (long only)
-                - technical- ema cross, volatility
+                - technical- ema cross, volatility cross, rsi_cross
                 - fundamental- factor-based investing (crypto clustering homework)
         - algorithmic trading framework
             - initialize
@@ -30,7 +30,7 @@
             - main
         - train system with ML Model to optimize for risk adjusted returns (regularization modeling)
         - implement trading framework on AWS (Sagemaker) // deploy on spyder or visual studio or pycharm
-        - automate performance reporting ()
+        - automate performance reporting pipeline ()
     3. Identify Data Sources
         - Shrimpy- crypto price data
         - newsapi- sentiment signal
@@ -43,7 +43,7 @@
     6. Determine easily designed inputs
         - shrimpy, newsapi, twitter
     7. ability to learn
-        - random forest, gradient boosters, logistic regression
+        - random forest, gradient boosters, logistic regression, 
     8. Potential bias
         - 
     
@@ -56,6 +56,7 @@
     - gradient booster notebooks
     - k-means clustering notebooks
     - lstm-tensorflow-keras notebooks
+    - deploy in sagemaker
 
 
 ## Links
@@ -89,3 +90,4 @@
 
 
 
+[3 line backtest](https://towardsdatascience.com/backtest-your-trading-strategy-with-only-3-lines-of-python-3859b4a4ab44)  
