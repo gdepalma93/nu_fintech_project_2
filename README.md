@@ -29,12 +29,7 @@ Objectives
             - signal generation
                 - btcusd Pct_change (velocity, acceleration)
                 - [alt]btc pct_change (velocity, acceleration)
-                
-            -                 
-                - sentiment calculus- (ibm-tone analyzer, nltk-intensity analyzer), event 
-                - momentum cross sectional- (long only)
-                - technical- ema cross, volatility cross, rsi_cross
-                - fundamental- factor-based investing (crypto clustering homework)
+
         - algorithmic trading framework
             - initialize
             - build dashboard
@@ -80,6 +75,30 @@ Objectives
         - 100k gradient funding x 2% mgmt fee and 25% profitshare from Prop Trading Desk  where k=2 , n=12, 
         - 400k seed funding for crypto web app (Start Up)
         - 1 cohort of 10 clients at 50% profitshare (Consultant)
+--- 
+## Graphics 
+
+    1. Software architecture (let's ask ryan for help with this if we can!)
+        - shrimpy, python, pandas, cryptocompare, quandl, kraken, tensorflow, scikit learn, jupyterlab, anaconda, spyder
+    2. Strategy 
+        - Universe: Assets available on Kraken Cryptocurrency exchange
+        - Signal generation:
+            - Macro Signal 
+                - LSTM BTCUSD daily Return Prediction 
+                - bucket returns into [very bullish, bullish, nuetral, bearish, very bearish]
+                - prediction buckets determine allocation wts [usd, btc, alt]
+            - Micro Signal
+                - LSTM "ALT"BTC hourly Return Prediction
+                - Rank ALT Assets by predicted hourly returns
+        - Target Portfolio:
+            - Allocate Assets Under Management to allocation wts from Macro Signal [USD, BTC, ALT] at the end of the asian market sessions during trading days, and at the same time on sundays. 
+            - Allocate 10% of ALT allocation to each of the top ten assets every hour
+        - Rebalance:
+            - Smart Order Rebalancing by shrimpy
+        - Performance BackTest:
+            - Evaluation Metrics
+            - Visualizations
+            - Areas of Improvement
       
 ---
 ## Resources
